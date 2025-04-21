@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav>
-      <h1>Work <span style="color: #6C63FF;">plin</span></h1>
+      <h1>Work <span class="highlight">plin</span></h1>
       <div class="menu">
         <a href="">About</a>
         <a href="">Places</a>
@@ -20,41 +20,58 @@
     </nav>
   </header>
 
-  <section id="image-sec">
+  <section class="image-sec">
     <div class="image-1">
       <img src="img/illustration.png" alt="Baloons">
       <div class="text-1">
-        <h2><span style="color: #6C63FF;">Everything</span> in <br>one click.</h2>
+        <h2><span class="highlight">Everything</span> in <br>one click.</h2>
       </div>
     </div>
+
+    <div class="find-text">
+      <h2>Find your <span class="highlight">plin</span>!</h2>
+    </div>
   </section>
-  <div class="find-text">
-    <h2>Find your <span style="color: #6C63FF;">plin</span>!</h2>
-  </div>
 
   <section class="form-sec">
-
     <div class="form-class">
-      <form action="submit">
-        <input type="number" placeholder="How many people?">
-        <input type="text" placeholder="For how long?">
-        <input type="email" placeholder="Your best email!">
-      </form>
+      <div class="form-div">
+        <form action="submit">
+          <label for="people" class="sr-only">How many people?</label>
+          <input type="number" id="people" placeholder="How many people?">
+        
+          <label for="duration" class="sr-only">For how long?</label>
+          <input type="text" id="duration" placeholder="For how long?">
+        
+          <label for="email" class="sr-only">Your best email!</label>
+          <input type="email" id="email" placeholder="Your best email!">
+        </form>
+        
+      </div>
+
+      <div class="form-text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero illum deserunt provident deleniti
+          incidunt eveniet ipsa nisi, aspernatur rem repellat facere repellendus. Quia suscipit quasi labore dicta
+          praesentium perspiciatis!</p>
+      </div>
     </div>
-    <div class="form-text">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore dicta sit. Impedit
-        minus inventore omnis. Similique ut quaerat expedita, et enim qui voluptas odio fuga illum excepturi iure
-        ducimus.</p>
-    </div>
-    <input type="button" value="Submit" class="submit-btn">
+
+    <button class="submit-btn">Submit</button>
+
   </section>
 
   <footer class="footer-sec">
-    <a href="">Blog</a>
-    <a href="">Join us!</a>
-    <a href="">Help</a>
-    <div class="footer-text">Work plin</div>
+    <div class="links">
+      <a href="">Blog</a>
+      <a href="">Join us!</a>
+      <a href="">Help</a>
+    </div>
+
+    <div class="footer-text">
+      <h1>Work plin</h1>
+    </div>
   </footer>
+
 </body>
 
 </html>
